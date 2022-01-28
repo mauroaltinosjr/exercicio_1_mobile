@@ -6,21 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <?xml version="1.0" encoding="utf-8"?>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:orientation="vertical" >
-        <TextView android:id="@+id/text"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mensagem" />
-        <Button android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:hint="Digite  aqui" />
+        <Button
+            android:id="@+id/btnClickHere"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Enviar" />
+            android:layout_gravity="right"
+            android:text="Enviar"
+            android:onClick="displayToast"/>
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mensagem"/>
     </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
